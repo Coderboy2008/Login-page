@@ -3,7 +3,7 @@
 Hello to all dear developers
 This project is similar to the previous project, but changes have been made in this version
 
-[Login Page - Morteza Ali Soleimani](https://s8.uupload.ir/files/capture_msvz.png)
+![Login Page - Morteza Ali Soleimani](https://s8.uupload.ir/files/capture_msvz.png)
 
 ## What has been added?
 ---
@@ -32,8 +32,7 @@ Thank you for supporting us by giving us a star
 سلام به همه توسعه دهندگان عزیز
 این پروژه مشابه پروژه قبلی است اما تغییراتی در این نسخه اعمال شده است
 
-[صفحه ورود - مرتضی علی سلیمانی](https://s8.uupload.ir/files/capture_msvz.png)
-
+![Login Page - Morteza Ali Soleimani](https://s8.uupload.ir/files/capture_msvz.png)
 ## چه چیزی اضافه شده است؟
 ---
 این پروژه نسبت به پروژه قبلی دارای ویژگی های اضافی است
