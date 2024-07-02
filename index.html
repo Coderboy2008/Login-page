@@ -1,0 +1,80 @@
+<!-- Directed by Morteza Ali Soleimani
+github page : https://github.com/Coderboy2008 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css files -->
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Gilroy font stylesheet -->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <!-- My css file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Icon tab -->
+    <link rel="shortcut icon" href="assets/img/25231.png" type="image/x-icon">
+    <!-- Title tab -->
+    <title>Login Page</title>
+</head>
+
+<body>
+    <!-- Error card -->
+    <div class="error d-flex flex-column align-items-start justify-content-flex-start m-1">
+        <!-- Error text (will cahnge in js) -->
+        <p class="m-0 error-text">Login failed. retry...</p>
+        <div class="p-timebar">
+            <div class="timebar"></div>
+        </div>
+    </div>
+
+    <!-- The parent section of all of the page -->
+    <div class="p-login-sec">
+        <div class="container">
+            <div class="login-sec position-absolute d-flex align-items-center justify-content-between flex-column text-center">
+                <!-- Login card -->
+                <div class="cont-media pb-2">
+                    <div class="p-logo d-flex align-items-center justify-content-center mt-4">
+                        <img class="logo" src="assets/img/25231.png" alt="SEO">
+                    </div>
+                    <!-- Form & inputs -->
+                    <div class="p-form">
+                        <div class="form d-flex justify-content-center align-items-center flex-column">
+                            <!-- Username input -->
+                            <input class="username-inpt mt-4 position-relative p-2" type="text" placeholder="Enter username">
+                            <!-- Text warning input(username) -->
+                            <span class="warning-user m-0">Username to low! (min : 6 ch)</span>
+                            <!-- Password input -->
+                            <input class="pass-inpt mt-2 position-relative p-2" type="password" placeholder="Enter password">
+                            <!-- Text warning input(password) -->
+                            <span class="warning-pass m-0">Password to low! (min : 8 ch)</span>
+                            <div class="l-parent">
+                                <!-- Checkbox show password -->
+                                <input class="chk-box" type="checkbox" id="show-pass">
+                                <label class="shpass mt-3 mb-2">Show password</label>
+                            </div>
+                            <!-- Submit button -->
+                            <input class="submit" type="submit" value="Submit">
+                        </div>
+                        <div class="p-border d-flex flex-column justify-content-center align-items-center">
+                            <div class="border"></div>
+                            <p style="font-size: 12px; z-index: 1;">Made by Morteza Ali Soleimani</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript files -->
+
+    <!-- Bootstrap files -->
+    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- My JavaScript file -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+/* Directed by Morteza Ali Soleimani
+github page : https://github.com/Coderboy2008 */
+
+/* clearing defult styles */
+*{
+    font-family: 'Gilroy';
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Error card styles */
+
+.error{
+    position: fixed;
+    top: 0;
+    bottom: unset;
+    z-index: 1;
+    background: rgb(255 0 0 / 60%);
+    width: 250px;
+    height: 74px;
+    border-radius: 0px 0px 6px 6px;
+    opacity: 0;
+    box-shadow: 0px 0px 14px 5px #afafaf7d;
+    transition: all .2s linear;
+}
+
+.error p{
+    color: #f7f7f7; /*Error text's color*/
+    font-weight: 700;
+    font-size: 18px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.p-timebar{
+    background: #d4e4e2e7;
+    width: 250px;
+    height: 7px;
+}
+
+.error .timebar{
+    background: #e900004f;
+    width: 250px;
+    height: 7px;
+    border-radius: 0px 0px 6px 6px;
+    transition: all 3s linear;/*You can change time of time bar*/
+}
+
+/* Username input warning */
+
+.warning-user{
+    display: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: red;
+    opacity: 0;
+}
+
+/* Password input warning */
+
+.warning-pass{
+    display: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: red;
+    opacity: 0;
+}
+
+.login-sec{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Login card styles */
+
+.login-sec .cont-media{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(164deg, rgba(255,255,255,1) 0%, rgb(255 255 255) 100%);
+    box-shadow: 0px 4px 3px 1px #ccecffb7;
+    border: #686868 solid 1px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Shapes */
+
+.login-sec .cont-media::before{
+    content: '';
+    background-color: #2db2ff85;/*You can change shape's color*/
+    width: 120px;
+    height: 120px;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    border-radius: 50%;
+    top: -20px;
+    left: -30px;
+}
+
+
+.login-sec .cont-media::after{
+    content: '';
+    background-color: #2db2ff85;/*You can change shape's color*/
+    width: 120px;
+    height: 120px;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    border-radius: 30px;
+    bottom: -20px;
+    right: -30px;
+    transform: rotate(45deg);
+}
+
+.p-logo .logo{
+    width: 25%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Username input styles */
+
+.form .username-inpt{
+    border: none;
+    z-index: 0;
+    width: 200px;
+    height: 37px;
+    border: #adadad solid .1mm;
+    border-radius: 3px;
+    background-color: #f8f7f7;
+    transition: all ease-in-out .3s;
+}
+
+.form .username-inpt::-webkit-input-placeholder{
+    position: absolute;
+    top: 10px;
+    font-weight: 500;
+    font-size: 11px;
+    transition: all ease-in-out .3s;
+}
+
+.form .username-inpt:focus-visible{
+    border-radius: 10px;
+    border-top: solid #2db2ff85 3px;
+    outline: none;
+}
+
+.form .username-inpt:focus::-webkit-input-placeholder{
+    color: #010101;
+    top: 3px;
+    font-size: 11px;
+}
+
+/* Password input styles */
+
+.form .pass-inpt{
+    z-index: 0;
+    width: 200px;
+    height: 37px;
+    border: #adadad solid .1mm;
+    border-radius: 3px;
+    background-color: #f8f7f7;
+    transition: all ease-in-out .3s;
+}
+
+.form .pass-inpt::-webkit-input-placeholder{
+    position: absolute;
+    top: 10px;
+    transition: all ease-in-out .3s;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.form .pass-inpt:focus-visible{
+    border-radius: 10px;
+    border-top: solid #2db2ff85 3px;
+    outline: none;
+}
+
+.form .pass-inpt:focus::-webkit-input-placeholder{
+    color: #010101;
+    top: 3px;
+    font-size: 11px;
+}
+
+/* checkbox */
+
+.l-parent .shpass{
+    font-size: 13px;
+    font-weight: 500;
+    color: #010101;
+}
+
+/* Submit button styles */
+
+.submit{
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    border: #a8a8a8c5 solid 1px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #2db1ff;
+    transition: all ease-in-out .2s;
+    box-shadow: 0px 2px 3px 2px #2288c434;
+}
+
+.p-border .border{
+    width: 90%;
+    border-bottom: #686868 solid .5px !important;
+    margin-top: 8px;
+}
+
+/* responsive styles */
+
+@media (min-width:200px) {
+    .login-sec .cont-media{
+        width: 250px;
+        height: 360px;
+    }
+    .form .username-inpt::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+    .form .pass-inpt::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}
+
+@media (min-width:768px) {
+    .login-sec .cont-media{
+        width: 288px;
+        height: 373px;
+    }
+    .form .username-inpt::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+    .form .pass-inpt::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}
+
+@media (min-width:992px) {
+    .form .username-inpt::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+    .form .pass-inpt::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}
